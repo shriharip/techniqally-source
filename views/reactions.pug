@@ -1,0 +1,35 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  title Welcome to Techniqally
+  // Google Fonts
+  link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic')
+  // CSS Reset
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css')
+  // Milligram CSS
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css')
+.container
+  .row(style='background-color: #6B5B95')
+    .column.column-80
+      h3(style="color: #FF6F61") Techniqally
+    .column.column-10
+      h4 
+        a(href="/", style="color: white") Home
+    .column.column-10
+      h4(style="color: white") 
+        a(href="/about", style="color: white") About
+  .row
+    .column(style="margin-top: 4rem")
+        p You must be crazy : 
+            span
+                h3 #{data.cr}
+        p Seen even crazier stuff this year! Good Luck! : 
+            span
+                h3 #{data.ecr}
+        p Outrageous! Please don't do this : 
+            span 
+                h3 #{data.ocr}
+        p Cool! Would be great to know how things go: 
+            span
+                h3 #{data.gcr}
